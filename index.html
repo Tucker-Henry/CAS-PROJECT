@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WalkSafe Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+    }
+    .bio {
+      margin: 20px 0;
+    }
+    .blog-post {
+      margin: 10px 0;
+    }
+    .dropdown-content {
+      display: none;
+      margin-left: 20px;
+    }
+    .show {
+      display: block;
+    }
+    .btn {
+      padding: 10px 15px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>WalkSafe Project</h1>
+    <p>Making crossings safer for our community</p>
+  </header>
+
+  <div class="bio">
+    <h2>About Us</h2>
+    <p>We are a group of students working to make crosswalks and streets safer for everyone. Here is our story and mission...</p>
+  </div>
+
+  <div>
+    <h2>Mailing List</h2>
+    <a class="btn" href="https://your-mailing-list-link.com">Join our mailing list</a>
+  </div>
+
+  <div class="blogs">
+    <h2>Blog and Videos</h2>
+    <div class="blog-post">
+      <button class="btn"onclick="toggleDropdown('blog1')">Blog #1: Our Mission</button>
+      <div id="blog1" class="dropdown-content">
+        <p>Here’s the text or video embed for Blog #1. You can replace this with a YouTube embed code if needed!</p>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <button class="btn"onclick="toggleDropdown('blog2')">Blog #2: Interview with a Pedestrian</button>
+      <div id="blog2" class="dropdown-content">
+        <p>Interview text goes here. Or embed a video link!</p>
+      </div>
+    </div>
+    <!-- Add as many as you want -->
+  </div>
+
+  <script>
+    function toggleDropdown(id) {
+      var elem = document.getElementById(id);
+      elem.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
