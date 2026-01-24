@@ -1,84 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crosswalk Safety Project</title>
 
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 </head>
-  <title>WalkSafe Project</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    header {
-      text-align: center;
-    }
-    .bio {
-      margin: 20px 0;
-    }
-    .blog-post {
-      margin: 10px 0;
-    }
-    .dropdown-content {
-      display: none;
-      margin-left: 20px;
-    }
-    .show {
-      display: block;
-    }
-    .btn {
-      padding: 10px 15px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-  </style>
-</head>
+
 <body>
-  <header>
-    <h1>WalkSafe Project</h1>
-    <p>Making crossings safer for our community</p>
-  </header>
 
-  <div class="bio">
-    <h2>About Us</h2>
-    <p>We are a group of students working to make crosswalks and streets safer for everyone. Here is our story and mission...</p>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm">
+  <div class="container">
+
+    <!-- Centered Brand -->
+    <a class="navbar-brand mx-auto fw-bold fs-3" href="#">Crosswalk Safety</a>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown position-absolute end-0 me-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Menu
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="#about">About Us</a></li>
+        <li><a class="dropdown-item" href="#mailing">Join Mailing List</a></li>
+        <li><a class="dropdown-item" href="#articles">Articles & Interviews</a></li>
+        <li><a class="dropdown-item" href="#petition">Petition</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ABOUT US SECTION -->
+<section id="about" class="container py-5">
+  <h2 class="text-center mb-4">About Us</h2>
+
+  <div class="mb-5">
+    <h4>Our Mission</h4>
+    <p>
+      Our goal is to raise awareness about unsafe crosswalks in St. Petersburg, FL,
+      gather community support, and advocate for safer pedestrian infrastructure.
+    </p>
   </div>
 
-  <div>
-    <h2>Mailing List</h2>
-    <a class="btn" href="https://your-mailing-list-link.com">Join our mailing list</a>
-  </div>
+  <!-- Bios -->
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <img src="https://via.placeholder.com/200" class="rounded-circle mb-3" alt="Bio 1">
+      <h5>Name 1</h5>
+      <p>Short bio goes here.</p>
+    </div>
 
-  <div class="blogs">
-    <h2>Blog and Videos</h2>
-    <div class="blog-post">
-      <button class="btn"onclick="toggleDropdown('blog1')">Blog #1: Our Mission</button>
-      <div id="blog1" class="dropdown-content">
-        <p>Here’s the text or video embed for Blog #1. You can replace this with a YouTube embed code if needed!</p>
+    <div class="col-md-4 mb-4">
+      <img src="https://via.placeholder.com/200" class="rounded-circle mb-3" alt="Bio 2">
+      <h5>Name 2</h5>
+      <p>Short bio goes here.</p>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <img src="https://via.placeholder.com/200" class="rounded-circle mb-3" alt="Bio 3">
+      <h5>Name 3</h5>
+      <p>Short bio goes here.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MAILING LIST SECTION -->
+<section id="mailing" class="container py-5">
+  <h2 class="text-center mb-4">Join Our Mailing List</h2>
+
+  <p class="text-center mb-4">
+    Stay updated on our project, new articles, and petition progress.
+  </p>
+
+  <!-- Placeholder for your Google Form -->
+  <div class="text-center border p-4 rounded bg-light">
+    <p><em>Your Google Form embed will go here.</em></p>
+  </div>
+</section>
+
+<!-- ARTICLES SECTION -->
+<section id="articles" class="container py-5">
+  <h2 class="text-center mb-4">Articles & Interviews</h2>
+
+  <div class="row">
+
+    <!-- Article Card 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Article Image">
+        <div class="card-body">
+          <h5 class="card-title">Article Title</h5>
+          <p class="card-text">Short description of the article.</p>
+        </div>
       </div>
     </div>
 
-    <div class="blog-post">
-      <button class="btn"onclick="toggleDropdown('blog2')">Blog #2: Interview with a Pedestrian</button>
-      <div id="blog2" class="dropdown-content">
-        <p>Interview text goes here. Or embed a video link!</p>
+    <!-- Article Card 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Article Image">
+        <div class="card-body">
+          <h5 class="card-title">Article Title</h5>
+          <p class="card-text">Short description of the article.</p>
+        </div>
       </div>
     </div>
-    <!-- Add as many as you want -->
-  </div>
 
-  <script>
-    function toggleDropdown(id) {
-      var elem = document.getElementById(id);
-      elem.classList.toggle("show");
-    }
-  </script>
+    <!-- Article Card 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Article Image">
+        <div class="card-body">
+          <h5 class="card-title">Article Title</h5>
+          <p class="card-text">Short description of the article.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PETITION SECTION -->
+<section id="petition" class="container py-5">
+  <h2 class="text-center mb-4">Sign the Petition</h2>
+
+  <p class="text-center mb-4">
+    Add your name to support safer crosswalks in St. Petersburg.
+  </p>
+
+  <!-- Placeholder for your Google Form -->
+  <div class="text-center border p-4 rounded bg-light">
+    <p><em>Your petition form embed will go here.</em></p>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
